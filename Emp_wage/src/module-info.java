@@ -1,0 +1,2 @@
+module Emp_wage {
+}
