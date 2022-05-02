@@ -13,6 +13,7 @@ public class EmpWage {
 		   int FULLDAY = 8;
 		   int PARTTIME = 0;
 		   int HALFDAY = 4;
+		   int MONTH = 20;
 		   
 		 // Computation
 		   double empCheck = Math.floor(Math.random() * 10) % 2;
@@ -49,9 +50,13 @@ public class EmpWage {
 	        	 		break;
 	        	default : System.out.println("Employee is absent");
 	        			  System.out.println("Employee Daily Wage is Zero");
-
-	   }
+	         }
 		   
+	       for(int i=1;i<=20;i++)
+           {
+               int DailyEmpWage = WAGEPERHR * FULLDAY * MONTH * i;
+               System.out.println("Sum after adding :" + i  + " is : " + DailyEmpWage);
+           }
 		   
 
 	}
